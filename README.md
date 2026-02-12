@@ -1,6 +1,6 @@
-# About Me | Carlos De Jesus
+# Stand up | Carlos De Jesus
 
-A web-based presentation for Holberton School, built with HTML, CSS, and JavaScript.
+A web-based stand up presentation for Holberton School, built with HTML, CSS, and JavaScript.
 
 ## Overview
 
@@ -9,8 +9,9 @@ This project is a slide presentation that introduces my background, motivations,
 ## How to View
 
 1. Clone or download this repository
-2. Open `index.html` in any web browser (Chrome, Firefox, Edge, Safari)
-3. No server or build step required—it runs locally
+2. (Optional) Add music: place `loading.mp3` and `presentation.mp3` in the `audio/` folder
+3. Open `index.html` in any web browser (Chrome, Firefox, Edge, Safari)
+4. No server or build step required—it runs locally
 
 ## Controls
 
@@ -33,6 +34,9 @@ This project is a slide presentation that introduces my background, motivations,
 
 ```
 About me/
+├── audio/           # Music tracks
+│   ├── loading.mp3      # Loading screen music
+│   └── presentation.mp3 # Presentation music
 ├── index.html   # HTML structure
 ├── styles.css   # Layout and styling
 ├── script.js    # Slide navigation logic

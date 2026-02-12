@@ -3,17 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carlos De Jesus | About Me | Holberton School</title>
+  <title>Stand up | Carlos De Jesus | Holberton School</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Loading screen - wait for classmates to join -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="loading-spinner"></div>
+      <h2 class="loading-title">Stand up</h2>
+      <p class="loading-subtitle">Carlos De Jesus</p>
+      <p class="loading-text">Waiting for classmates to join…</p>
+      <p class="loading-hint">Click or press any key to start</p>
+    </div>
+  </div>
+
   <div class="presentation">
     <!-- Slide 1: Title -->
     <section class="slide active" data-slide="0">
-      <h1 class="slide-title">About Me</h1>
+      <h1 class="slide-title">Stand up</h1>
       <div class="slide-content intro-slide">
         <p>Hi, I'm Carlos De Jesus — from Cataño, Puerto Rico</p>
         <span class="location">📍 Cataño, PR</span>
@@ -110,6 +121,16 @@
   <p class="nav-hint">← → or click to navigate</p>
   <div class="nav-dots" id="navDots"></div>
   <span class="slide-number" id="slideNumber">1 / 9</span>
+
+  <!-- Audio: loading screen and presentation each have their own track -->
+  <audio id="loadingMusic" loop preload="auto">
+    <source src="audio/loading.mp3" type="audio/mpeg">
+    <source src="audio/loading.ogg" type="audio/ogg">
+  </audio>
+  <audio id="presentationMusic" loop preload="auto">
+    <source src="audio/presentation.mp3" type="audio/mpeg">
+    <source src="audio/presentation.ogg" type="audio/ogg">
+  </audio>
 
   <script src="script.js"></script>
 </body>
