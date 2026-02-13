@@ -7,22 +7,15 @@ These pixel art images were created for the Stand up presentation.
 | File | Used On | Description |
 |------|--------|-------------|
 | `loading-torii-sunset.png` | Loading screen | Torii gate watching the sunset (Japanese + Puerto Rico theme) |
+| `logo-sce.png` | Slide 2 (Background) | Southern California Edison pixel art logo |
+| `logo-pactiv-evergreen.png` | Slide 2 (Background) | Pactiv Evergreen pixel art logo |
+| `tales-of-symphonia.png` | Slide 7 (Hobbies) | Tales of Symphonia JRPG-inspired pixel art |
+| `pixel-game.png` | Slide 7 (Hobbies) | Small pixel icon: video game controller |
+| `pixel-pizza.png` | Slide 7 (Hobbies) | Small pixel icon: pizza slice |
 
 ## Slide Assets (not currently displayed)
 
-Pixel art for slides—available to re-add to the presentation:
-
-| File | Slide | Description |
-|------|-------|-------------|
-| `avatar-carlos.png` | Slide 1 (Intro) | Pixel avatar of Carlos |
-| `slide-background.png` | Slide 2 | Call center / service rep |
-| `slide-holberton.png` | Slide 3 | Motivation / building tools |
-| `slide-gaming.png` | Slide 4 | Neopets / Nickelodeon retro games |
-| `slide-project.png` | Slide 5 | Disposition tool / clipboard |
-| `slide-vision.png` | Slide 6 | Credit unions / vision |
-| `slide-hobbies.png` | Slide 7 | Pizza, games, series |
-| `slide-music.png` | Slide 8 | Guitar and Puerto Rican cuatro |
-| `slide-thanks.png` | Slide 9 | Thank you / waving |
+Pixel art for slides—available to re-add to the presentation (files must exist in assets folder).
 
 ## Evaluation Assets
 
@@ -30,9 +23,7 @@ Scenic pixel art combining Japanese and Puerto Rico elements (available for futu
 
 | File | Description |
 |------|-------------|
-| `scenic-beach-fusion.png` | Puerto Rico beach with palm trees, coquí, cherry blossom petals |
 | `scenic-torii-tropical.png` | Torii gate in Puerto Rican tropical forest |
-| `scenic-cultural-fusion.png` | Puerto Rico flag colors with Japanese rising sun motif |
 | `scenic-san-juan-lanterns.png` | Old San Juan at night with Japanese lanterns |
 
 ## Legacy / Unused
