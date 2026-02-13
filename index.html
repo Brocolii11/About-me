@@ -12,10 +12,11 @@
 <body>
   <!-- Loading screen - wait for classmates to join -->
   <div class="loading-screen" id="loadingScreen">
+    <img src="assets/loading-torii-sunset.png" alt="Torii watching the sunset" class="loading-pixel-art" />
     <div class="loading-content">
-      <div class="loading-spinner"></div>
       <h2 class="loading-title">Stand up</h2>
-      <p class="loading-subtitle">by Carlos De Jesus | for Holberton School</p>
+      <p class="loading-subtitle">by Carlos De Jesus</p>
+      <p class="loading-subtitle">for Holberton School Cohort 29</p>
       <p class="loading-text">Press Start to begin</p>
     </div>
   </div>
@@ -25,7 +26,8 @@
     <section class="slide active" data-slide="0">
       <h1 class="slide-title">Stand up</h1>
       <div class="slide-content intro-slide">
-        <p>Hi, I'm Carlos De Jesus — from Cataño, Puerto Rico</p>
+        <p>Hi, I'm Carlos De Jesus</p>
+        <p>I grew up in Bayamon and Aguas Buenas, and I currently live in Cataño, Puerto Rico.</p>
         <span class="location">📍 Cataño, PR</span>
       </div>
     </section>
@@ -117,18 +119,22 @@
     </section>
   </div>
 
+  <!-- HIDDEN: Audio visualizer - uncomment to re-enable
+  <canvas id="audioVisualizer" class="audio-visualizer" aria-hidden="true"></canvas>
+  -->
+
   <p class="nav-hint">← → or click to navigate</p>
   <div class="nav-dots" id="navDots"></div>
   <span class="slide-number" id="slideNumber">1 / 9</span>
 
   <!-- Audio: loading screen and presentation each have their own track -->
-  <audio id="loadingMusic" loop preload="auto">
-    <source src="audio/loading.mp3" type="audio/mpeg">
-    <source src="audio/loading.ogg" type="audio/ogg">
+  <audio id="loadingMusic" loop preload="auto" autoplay muted>
+    <source src="audio/idea_bolero.mp3" type="audio/mpeg">
+    
   </audio>
   <audio id="presentationMusic" loop preload="auto">
     <source src="audio/presentation.mp3" type="audio/mpeg">
-    <source src="audio/presentation.ogg" type="audio/ogg">
+    
   </audio>
 
   <script src="script.js"></script>

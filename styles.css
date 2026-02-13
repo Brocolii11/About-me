@@ -171,6 +171,25 @@ html, body {
   z-index: 10;
 }
 
+/* HIDDEN: Audio visualizer - uncomment to re-enable
+.audio-visualizer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 5;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background: linear-gradient(to top, rgba(15, 20, 25, 0.9) 0%, transparent 100%);
+}
+
+.audio-visualizer.visible {
+  opacity: 1;
+}
+*/
+
 .highlight-box {
   background: var(--bg-card);
   border-left: 4px solid var(--accent);
@@ -189,10 +208,30 @@ html, body {
   height: 100%;
   z-index: 1000;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: var(--bg-dark);
   transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loading-pixel-art {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.4;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  pointer-events: none;
+}
+
+.loading-screen .loading-content {
+  position: relative;
+  z-index: 1;
 }
 
 .loading-screen.hidden {
