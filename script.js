@@ -182,12 +182,14 @@ let currentSlide = 0;
 
 // Create dots
 const dotsContainer = document.getElementById('navDots');
+if (dotsContainer) {
 for (let i = 0; i < totalSlides; i++) {
   const dot = document.createElement('div');
   dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
   dot.setAttribute('data-index', i);
   dot.addEventListener('click', () => goToSlide(i));
   dotsContainer.appendChild(dot);
+}
 }
 
 const dots = document.querySelectorAll('.nav-dot');
@@ -204,7 +206,8 @@ function goToSlide(index) {
     dot.classList.toggle('active', i === currentSlide);
   });
 
-  document.getElementById('slideNumber').textContent = `${currentSlide + 1} / ${totalSlides}`;
+  const slideNumberEl = document.getElementById('slideNumber');
+  if (slideNumberEl) slideNumberEl.textContent = `${currentSlide + 1} / ${totalSlides}`;
 }
 
 document.addEventListener('keydown', (e) => {
@@ -227,3 +230,4 @@ document.addEventListener('click', (e) => {
     goToSlide(currentSlide - 1);
   }
 });
+
